@@ -3,4 +3,4 @@ if SHIELD_KEBO80
 config ZMK_KEYBOARD_NAME
     default "kebo80"
 
-endif # SHIELD_KEBO80
+endif
