@@ -19,26 +19,26 @@
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
 
-        row-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 20 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 22 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 24 GPIO_ACTIVE_HIGH>,
-                    <&gpio1 0  GPIO_ACTIVE_HIGH>,
+        row-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>
+                    <&gpio0 20 GPIO_ACTIVE_HIGH>
+                    <&gpio0 22 GPIO_ACTIVE_HIGH>
+                    <&gpio0 24 GPIO_ACTIVE_HIGH>
+                    <&gpio1 0  GPIO_ACTIVE_HIGH>
                     <&gpio0 11 GPIO_ACTIVE_HIGH>;
 
-        col-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 29 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 2  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 15 GPIO_ACTIVE_HIGH>,
-                    <&gpio1 13 GPIO_ACTIVE_HIGH>,
-                    <&gpio1 11 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 10 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 9  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 7  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 2  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 1  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 6  GPIO_ACTIVE_HIGH>,
-                    <&gpio1 4  GPIO_ACTIVE_HIGH>,
+        col-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>
+                    <&gpio0 29 GPIO_ACTIVE_HIGH>
+                    <&gpio0 2  GPIO_ACTIVE_HIGH>
+                    <&gpio1 15 GPIO_ACTIVE_HIGH>
+                    <&gpio1 13 GPIO_ACTIVE_HIGH>
+                    <&gpio1 11 GPIO_ACTIVE_HIGH>
+                    <&gpio0 10 GPIO_ACTIVE_HIGH>
+                    <&gpio0 9  GPIO_ACTIVE_HIGH>
+                    <&gpio1 7  GPIO_ACTIVE_HIGH>
+                    <&gpio1 2  GPIO_ACTIVE_HIGH>
+                    <&gpio1 1  GPIO_ACTIVE_HIGH>
+                    <&gpio1 6  GPIO_ACTIVE_HIGH>
+                    <&gpio1 4  GPIO_ACTIVE_HIGH>
                     <&gpio0 8  GPIO_ACTIVE_HIGH>;
     };
 
@@ -50,17 +50,11 @@
         columns = <14>;
 
         map = <
-            /* Row 0 */
             MTX(0,0) MTX(0,1) MTX(0,2) MTX(0,3) MTX(0,4) MTX(0,5) MTX(0,6) MTX(0,7) MTX(0,8) MTX(0,9) MTX(0,10) MTX(0,11) MTX(0,12) MTX(0,13)
-            /* Row 1 */
             MTX(1,0) MTX(1,1) MTX(1,2) MTX(1,3) MTX(1,4) MTX(1,5) MTX(1,6) MTX(1,7) MTX(1,8) MTX(1,9) MTX(1,10) MTX(1,11) MTX(1,12) MTX(1,13)
-            /* Row 2 */
             MTX(2,0) MTX(2,1) MTX(2,2) MTX(2,3) MTX(2,4) MTX(2,5) MTX(2,6) MTX(2,7) MTX(2,8) MTX(2,9) MTX(2,10) MTX(2,11) MTX(2,12) MTX(2,13)
-            /* Row 3 */
             MTX(3,0) MTX(3,1) MTX(3,2) MTX(3,3) MTX(3,4) MTX(3,5) MTX(3,6) MTX(3,7) MTX(3,8) MTX(3,9) MTX(3,10) MTX(3,11) MTX(3,12) MTX(3,13)
-            /* Row 4 */
             MTX(4,0) MTX(4,1) MTX(4,2) MTX(4,3) MTX(4,4) MTX(4,5) MTX(4,6) MTX(4,7) MTX(4,8) MTX(4,9) MTX(4,10) MTX(4,11) MTX(4,12) MTX(4,13)
-            /* Row 5 */
             MTX(5,0) MTX(5,1) MTX(5,2) MTX(5,3) MTX(5,4) MTX(5,5) MTX(5,6) MTX(5,7) MTX(5,8) MTX(5,9) MTX(5,10) MTX(5,11) MTX(5,12) MTX(5,13)
         >;
     };
@@ -74,41 +68,12 @@
             compatible = "zmk,physical-layout";
 
             keys = <
-                /* Row 0 */
-                KEY(0,   0,   0) KEY(1,  19,   0) KEY(2,  38,   0) KEY(3,  57,   0)
-                KEY(4,  76,   0) KEY(5,  95,   0) KEY(6, 114,   0) KEY(7, 133,   0)
-                KEY(8, 152,   0) KEY(9, 171,   0) KEY(10,190,   0) KEY(11,209,   0)
-                KEY(12,228,   0) KEY(13,247,   0)
-
-                /* Row 1 */
-                KEY(14,  0,  19) KEY(15, 19,  19) KEY(16, 38,  19) KEY(17, 57,  19)
-                KEY(18, 76,  19) KEY(19, 95,  19) KEY(20,114,  19) KEY(21,133,  19)
-                KEY(22,152,  19) KEY(23,171,  19) KEY(24,190,  19) KEY(25,209,  19)
-                KEY(26,228,  19) KEY(27,247,  19)
-
-                /* Row 2 */
-                KEY(28,  0,  38) KEY(29, 19,  38) KEY(30, 38,  38) KEY(31, 57,  38)
-                KEY(32, 76,  38) KEY(33, 95,  38) KEY(34,114,  38) KEY(35,133,  38)
-                KEY(36,152,  38) KEY(37,171,  38) KEY(38,190,  38) KEY(39,209,  38)
-                KEY(40,228,  38) KEY(41,247,  38)
-
-                /* Row 3 */
-                KEY(42,  0,  57) KEY(43, 19,  57) KEY(44, 38,  57) KEY(45, 57,  57)
-                KEY(46, 76,  57) KEY(47, 95,  57) KEY(48,114,  57) KEY(49,133,  57)
-                KEY(50,152,  57) KEY(51,171,  57) KEY(52,190,  57) KEY(53,209,  57)
-                KEY(54,228,  57) KEY(55,247,  57)
-
-                /* Row 4 */
-                KEY(56,  0,  76) KEY(57, 19,  76) KEY(58, 38,  76) KEY(59, 57,  76)
-                KEY(60, 76,  76) KEY(61, 95,  76) KEY(62,114,  76) KEY(63,133,  76)
-                KEY(64,152,  76) KEY(65,171,  76) KEY(66,190,  76) KEY(67,209,  76)
-                KEY(68,228,  76) KEY(69,247,  76)
-
-                /* Row 5 */
-                KEY(70,  0,  95) KEY(71, 19,  95) KEY(72, 38,  95) KEY(73, 57,  95)
-                KEY(74, 76,  95) KEY(75, 95,  95) KEY(76,114,  95) KEY(77,133,  95)
-                KEY(78,152,  95) KEY(79,171,  95) KEY(80,190,  95) KEY(81,209,  95)
-                KEY(82,228,  95) KEY(83,247,  95)
+                KEY(0,   0,   0) KEY(1,  19,   0) KEY(2,  38,   0) KEY(3,  57,   0) KEY(4,  76,   0) KEY(5,  95,   0) KEY(6, 114,   0) KEY(7, 133,   0) KEY(8, 152,   0) KEY(9, 171,   0) KEY(10,190,   0) KEY(11,209,   0) KEY(12,228,   0) KEY(13,247,   0)
+                KEY(14,  0,  19) KEY(15, 19,  19) KEY(16, 38,  19) KEY(17, 57,  19) KEY(18, 76,  19) KEY(19, 95,  19) KEY(20,114,  19) KEY(21,133,  19) KEY(22,152,  19) KEY(23,171,  19) KEY(24,190,  19) KEY(25,209,  19) KEY(26,228,  19) KEY(27,247,  19)
+                KEY(28,  0,  38) KEY(29, 19,  38) KEY(30, 38,  38) KEY(31, 57,  38) KEY(32, 76,  38) KEY(33, 95,  38) KEY(34,114,  38) KEY(35,133,  38) KEY(36,152,  38) KEY(37,171,  38) KEY(38,190,  38) KEY(39,209,  38) KEY(40,228,  38) KEY(41,247,  38)
+                KEY(42,  0,  57) KEY(43, 19,  57) KEY(44, 38,  57) KEY(45, 57,  57) KEY(46, 76,  57) KEY(47, 95,  57) KEY(48,114,  57) KEY(49,133,  57) KEY(50,152,  57) KEY(51,171,  57) KEY(52,190,  57) KEY(53,209,  57) KEY(54,228,  57) KEY(55,247,  57)
+                KEY(56,  0,  76) KEY(57, 19,  76) KEY(58, 38,  76) KEY(59, 57,  76) KEY(60, 76,  76) KEY(61, 95,  76) KEY(62,114,  76) KEY(63,133,  76) KEY(64,152,  76) KEY(65,171,  76) KEY(66,190,  76) KEY(67,209,  76) KEY(68,228,  76) KEY(69,247,  76)
+                KEY(70,  0,  95) KEY(71, 19,  95) KEY(72, 38,  95) KEY(73, 57,  95) KEY(74, 76,  95) KEY(75, 95,  95) KEY(76,114,  95) KEY(77,133,  95) KEY(78,152,  95) KEY(79,171,  95) KEY(80,190,  95) KEY(81,209,  95) KEY(82,228,  95) KEY(83,247,  95)
             >;
         };
     };
