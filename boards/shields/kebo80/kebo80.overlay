@@ -4,14 +4,9 @@
     compatible = "zmk,keyboard";
 
     chosen {
-        zmk,keyboard = &kebo80;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &mtx0;
         zmk,physical-layout = &phlo0;
-    };
-
-    kebo80: kebo80 {
-        compatible = "zmk,keyboard";
     };
 
     kscan0: kscan {
@@ -58,6 +53,7 @@
 
     phlo0: physical-layout {
         compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
 
         key-pos = <
             /* Row 0 */
