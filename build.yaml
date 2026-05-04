@@ -19,5 +19,5 @@
 #
 ---
 include:
-  board: nice_nano
-  shield: kebo80
+  - board: nice_nano
+    shield: kebo80
