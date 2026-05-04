@@ -47,8 +47,6 @@
         >;
     };
 
-#include <physical_layouts.dtsi>
-
     phlo0: physical-layout {
         compatible      =   "zmk,physical-layout";
         display-name    =   "Default Layout";
