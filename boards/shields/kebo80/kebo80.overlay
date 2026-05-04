@@ -13,8 +13,6 @@
         compatible = "zmk,keyboard";
     };
 
-    /* --- KSCAN MATRIX ---------------------------------------------------- */
-
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
@@ -42,8 +40,6 @@
                     <&gpio0 8  GPIO_ACTIVE_HIGH>;
     };
 
-    /* --- MATRIX TRANSFORM (6×14) ---------------------------------------- */
-
     mtx0: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <6>;
@@ -58,8 +54,6 @@
             MTX(5,0) MTX(5,1) MTX(5,2) MTX(5,3) MTX(5,4) MTX(5,5) MTX(5,6) MTX(5,7) MTX(5,8) MTX(5,9) MTX(5,10) MTX(5,11) MTX(5,12) MTX(5,13)
         >;
     };
-
-    /* --- PHYSICAL LAYOUT (19 mm grid) ----------------------------------- */
 
     keymap {
         compatible = "zmk,keymap";
