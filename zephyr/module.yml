@@ -1,3 +1,4 @@
+name: kebo80
 build:
   settings:
     board_root: .
