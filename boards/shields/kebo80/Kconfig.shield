@@ -1,0 +1,2 @@
+config SHIELD_KEBO80
+    def_bool $(shields_list_contains,kebo80)
