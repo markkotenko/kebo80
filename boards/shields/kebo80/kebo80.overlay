@@ -54,7 +54,7 @@
         display-name    = "Default Layout";
         kscan           = <&kscan0>;
         transform       = <&mtx0>;
-        key-pos         = <
+        keys            = <
             /* Row 0 */
             0    0    19 19
             19   0    19 19
