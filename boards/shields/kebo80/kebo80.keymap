@@ -14,5 +14,15 @@
                 &kp LCTRL   &kp LGUI    &kp LGUI    &kp K_APP   &kp LALT    &kp SPACE   &kp SPACE   &kp SPACE   &kp RALT    &kp PSCRN   &kp RCTRL   &kp LEFT    &kp DOWN    &kp RIGHT
             >;
         };
+        fn_layer {
+            bindings = <
+                &studio_unlock  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans          &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            >;
+        };
     };
 };
