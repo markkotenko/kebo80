@@ -3,7 +3,7 @@
 
 / {
     chosen {
-        zmk,device-name         = "kebo80_dongle";
+        zmk,device-name         = "dongle";
         zmk,split-role          = "central";
         zmk,kscan               = &kscan0;
         zmk,physical-layout     = &phlo0;
